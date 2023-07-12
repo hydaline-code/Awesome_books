@@ -4,7 +4,25 @@ const addbtn = document.getElementById('add');
 
 let books = [];
 
-
+function displayBooks() {
+  const booksList = document.getElementById('books');
+  booksList.innerHTML = '';
+  books.forEach((book, index) => {
+    const list = document.createElement('li');
+    const list1 = document.createElement('li');
+    list.textContent = `${book.title}`;
+    list1.textContent = `${book.author}`;
+    booksList.appendChild(list);
+    booksList.appendChild(list1);
+    const removeBtn = document.createElement('button');
+    const line = document.createElement('hr');
+    removeBtn.textContent = 'Remove';
+    removeBtn.classList.add('remove');
+    booksList.appendChild(removeBtn);
+    booksList.appendChild(line);
+    removeBtn.addEventListener('click', () => removeBook(index));
+  });
+}
 function removeBook(index) {
   if (index >= 0 && index < books.length) {
     books = books.filter((book, i) => i !== index);
