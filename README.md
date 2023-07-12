@@ -107,10 +107,17 @@ You can deploy this project using:
 - GitHub: [https://github.com/hydaline-code]
 - LinkedIn: [https://www.linkedin.com/in/charlene-djoungang-0851aa21a/]
 
+- 👤 **Fatuma Hussein**
+
+- GitHub: [@fatmahussein](https://github.com/fatmahussein)
+- Twitter: [@FatmaHussein200](https://twitter.com/@FatmaHussein200)
+- LinkedIn: [FatumaHussein](https://www.linkedin.com/in/fatuma-hussein-48149917b)
+
 ## 🔭 Future Features <a name="future-features"></a>
 
-- A desktop responsive portfolio website
-- More pages added displaying my various projects
+- Using Javascript class
+- A complete styled books library
+
 
 ## 🤝 Contributing <a name="contributing"></a>
 
