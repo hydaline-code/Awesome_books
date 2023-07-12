@@ -1,0 +1,17 @@
+#books {
+  list-style: none;
+  text-align: left;
+}
+
+#books > li {
+  text-align: left;
+}
+
+.remove {
+  width: 20vw;
+}
+
+.add-book input[type="text"],
+#add {
+  margin-top: 0.5rem;
+}
