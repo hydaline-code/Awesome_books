@@ -105,7 +105,6 @@ You can deploy this project using:
 👤 **Hydaline**
 
 - GitHub: [https://github.com/hydaline-code]
-- Twitter: [https://twitter.com/hydalineC]
 - LinkedIn: [https://www.linkedin.com/in/charlene-djoungang-0851aa21a/]
 
 ## 🔭 Future Features <a name="future-features"></a>
