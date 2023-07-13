@@ -12,18 +12,16 @@ form {
   align-items: center;
   flex-direction: column;
 }
+
 .display-4 {
-  font-size: 2.5rem;
+  font-size: 20px;
   font-weight: bold;
   margin-bottom: 20px;
 }
 
 .table {
-  width: 100%;
+  width: 70%;
   border-collapse: collapse;
-  border: 1px solid black;
-}
-#books{
   border: 1px solid black;
 }
 
@@ -34,7 +32,7 @@ form {
 
 .table-bordered th,
 .table-bordered td {
-  border: 1px solid #ddd;
+  border: none;
 }
 
 .mt-4 {
@@ -61,14 +59,13 @@ form {
 
 .line {
   border: none;
-  border-top: 1px solid #ddd;
-  margin: 20px auto;
-  width: 80%;
+  border-top: 1px solid black;
+  width: 58px;
 }
 
 /* Additional styles for remove button */
 .remove {
-  background-color:white;
+  background-color: white;
   color: black;
   padding: 5px 10px;
   cursor: pointer;
@@ -83,6 +80,11 @@ form {
   margin: 0;
 }
 
+table tbody tr {
+  display: flex;
+  justify-content: space-between;
+}
+
 #books tr:nth-child(odd) {
   background-color: #f2f2f2;
 }
@@ -91,3 +93,27 @@ form {
   background-color: #fff;
 }
 
+.add-book {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#title {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#author {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.add-book #add {
+  margin-left: auto;
+  margin-right: 24%;
+}

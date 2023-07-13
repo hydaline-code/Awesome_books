@@ -1,3 +1,4 @@
+/* eslint-disable max-classes-per-file */
 class BookStore {
   constructor() {
     this.titleInput = document.getElementById('title');
