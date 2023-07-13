@@ -1,17 +1,93 @@
-#books {
-  list-style: none;
-  text-align: left;
+/* styles.css */
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-#books > li {
-  text-align: left;
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.display-4 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
-.remove {
-  width: 20vw;
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+#books{
+  border: 1px solid black;
+}
+
+.table th,
+.table td {
+  padding: 5px;
+}
+
+.table-bordered th,
+.table-bordered td {
+  border: 1px solid #ddd;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .add-book input[type="text"],
-#add {
-  margin-top: 0.5rem;
+.add-book button {
+  margin-bottom: 10px;
 }
+
+.line {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 20px auto;
+  width: 80%;
+}
+
+/* Additional styles for remove button */
+.remove {
+  background-color:white;
+  color: black;
+  padding: 5px 10px;
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+
+/* Custom styling for book list */
+#books {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#books tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+#books tr:nth-child(even) {
+  background-color: #fff;
+}
+
