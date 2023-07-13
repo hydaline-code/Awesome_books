@@ -5,7 +5,6 @@ class BookStore {
     this.authorInput = document.getElementById('author');
     this.addBtn = document.getElementById('add');
     this.books = [];
-
     this.addBtn.addEventListener('click', () => this.addNewBook());
     this.displayBooks();
   }
