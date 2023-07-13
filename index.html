@@ -4,24 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
+  <!-- <link rel="stylesheet" href="bootstrap.css"> -->
   <title>Books Store</title>
 </head>
 <body>
-  
-
-  <h1>HEY ! welcome to our Awesome bookstore</h1>
-  <div class="store">
-  <ul id="books">
-   
-  </ul>
-
-</div>
-
-<div class="add-book">
-  <input type="text" id="title" placeholder="Title"> <br>
-  <input type="text" id="author" placeholder="Author"><br>
+  <div class="container mt-4">
+    <h1 class="display-4 text-center">All Awesome books</h1>
+  <table class="table table-striped mt-5 mx-auto table-bordered">
+  <tbody id="books">
+  </tbody>
+  </table>
+<hr class="line mx-auto mt-5">
+<h2 class="display-4 text-center">Add a new book</h2>
+<form class="add-book mx-auto">
+  <input type="text" id="title" placeholder="Title">
+  <input type="text" id="author" placeholder="Author">
   <button id="add" type="submit" >Add </button>
+</form>
 </div>
-<script src="./script.js"> </script>
+<script src="script.js"> </script>
 </body>
 </html>
