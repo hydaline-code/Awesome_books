@@ -1,5 +1,6 @@
 /* eslint-disable no-use-before-define */
-class BookStore {
+ // JavaScript code for BookStore class and related functionality
+ class BookStore {
   constructor() {
     this.titleInput = document.getElementById('title');
     this.authorInput = document.getElementById('author');
@@ -8,6 +9,18 @@ class BookStore {
 
     this.addBtn.addEventListener('click', () => this.addNewBook());
     this.displayBooks();
+
+    this.navLinks = document.querySelectorAll('.nav-link');
+    this.sections = document.querySelectorAll('section');
+    this.showSection('list'); // Show the initial section
+
+    this.navLinks.forEach(navLink => {
+      navLink.addEventListener('click', (event) => {
+        event.preventDefault();
+        const section = event.target.getAttribute('data-section');
+        this.showSection(section);
+      });
+    });
   }
 
   displayBooks() {
@@ -54,6 +67,16 @@ class BookStore {
       this.displayBooks();
     }
   }
+
+  showSection(sectionName) {
+    this.sections.forEach(section => {
+      if (section.id === sectionName + '-section') {
+        section.style.display = 'block';
+      } else {
+        section.style.display = 'none';
+      }
+    });
+  }
 }
 
 const bookStore = new BookStore();
@@ -66,7 +89,8 @@ window.addEventListener('load', () => {
     bookStore.displayBooks();
   }
 });
-// date and time
+
+// JavaScript code for date and time
 function formatDate(date) {
   const options = { month: 'long', day: 'numeric', year: 'numeric' };
   const formattedDate = date.toLocaleDateString(undefined, options);
@@ -74,11 +98,11 @@ function formatDate(date) {
   // Add ordinal indicator for the day
   const day = date.getDate();
   const ordinalIndicator = getOrdinalIndicator(day);
-  const formattedDay = formattedDate.replace(/\b(\d+)\b/, `$1${ordinalIndicator}`);
+  const formattedDay = formattedDate.replace(/\b(\d+)\b/, '$1' + ordinalIndicator);
 
   const time = date.toLocaleTimeString(undefined, { hour: 'numeric', minute: '2-digit' });
 
-  return `${formattedDay} ${time}`;
+  return formattedDay + ' ' + time;
 }
 
 function getOrdinalIndicator(day) {
@@ -86,10 +110,14 @@ function getOrdinalIndicator(day) {
     return 'th';
   }
   switch (day % 10) {
-    case 1: return 'st';
-    case 2: return 'nd';
-    case 3: return 'rd';
-    default: return 'th';
+    case 1:
+      return 'st';
+    case 2:
+      return 'nd';
+    case 3:
+      return 'rd';
+    default:
+      return 'th';
   }
 }
 
@@ -100,4 +128,4 @@ function updateTime() {
 }
 
 // Update the time every second
-setInterval(updateTime, 10);
+setInterval(updateTime, 1000);
