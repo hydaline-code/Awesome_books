@@ -1,6 +1,6 @@
 /* eslint-disable no-use-before-define */
- // JavaScript code for BookStore class and related functionality
- class BookStore {
+// JavaScript code for BookStore class and related functionality
+class BookStore {
   constructor() {
     this.titleInput = document.getElementById('title');
     this.authorInput = document.getElementById('author');
@@ -14,7 +14,7 @@
     this.sections = document.querySelectorAll('section');
     this.showSection('list'); // Show the initial section
 
-    this.navLinks.forEach(navLink => {
+    this.navLinks.forEach((navLink) => {
       navLink.addEventListener('click', (event) => {
         event.preventDefault();
         const section = event.target.getAttribute('data-section');
@@ -69,8 +69,8 @@
   }
 
   showSection(sectionName) {
-    this.sections.forEach(section => {
-      if (section.id === sectionName + '-section') {
+    this.sections.forEach((section) => {
+      if (section.id === `${sectionName}-section`) {
         section.style.display = 'block';
       } else {
         section.style.display = 'none';
@@ -98,11 +98,11 @@ function formatDate(date) {
   // Add ordinal indicator for the day
   const day = date.getDate();
   const ordinalIndicator = getOrdinalIndicator(day);
-  const formattedDay = formattedDate.replace(/\b(\d+)\b/, '$1' + ordinalIndicator);
+  const formattedDay = formattedDate.replace(/\b(\d+)\b/, `$1${ordinalIndicator}`);
 
   const time = date.toLocaleTimeString(undefined, { hour: 'numeric', minute: '2-digit' });
 
-  return formattedDay + ' ' + time;
+  return `${formattedDay} ${time}`;
 }
 
 function getOrdinalIndicator(day) {

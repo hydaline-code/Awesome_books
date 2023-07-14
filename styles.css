@@ -7,21 +7,8 @@
   flex-direction: column;
 }
 
-#books {
-  list-style: none;
-  text-align: left;
-}
-
-#books > li {
-  text-align: left;
-}
-
 .store {
   display: none;
-}
-
-.remove {
-  width: 20vw;
 }
 
 .add-book {
@@ -33,7 +20,7 @@ form {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 0px;
+  padding: 0;
 }
 
 input {
@@ -73,27 +60,28 @@ input {
   text-decoration: underline;
 }
 
+.nav-links span li {
+  border: 1px solid white;
+}
+
 #current-time {
-  margin-left: 86%;
+  margin-left: 84%;
+  width: 25%;
 }
 
 header {
   margin-left: 10px;
-  padding: 0px 10px 0px 10px;
+  padding: 0 10px 0 10px;
 }
 
 .nav-links span {
-  margin-right: 500px;
-}
-
-.nav-links span li {
-  border: 1px solid white;
+  margin-right: 400px;
 }
 
 .container {
   max-width: 800px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 0;
 }
 
 .table {
@@ -113,7 +101,7 @@ header {
 }
 
 .mt-4 {
-  margin-top: 1rem;
+  margin-top: 0;
 }
 
 .mt-5 {
@@ -141,6 +129,7 @@ header {
   background-color: white;
   color: black;
   padding: 5px 10px;
+  width: 20vw;
   cursor: pointer;
   border: 1px solid black;
 }
@@ -150,6 +139,7 @@ header {
   list-style: none;
   padding: 0;
   margin: 0;
+  text-align: left;
 }
 
 #books tr:nth-child(odd) {
@@ -167,27 +157,47 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 10px;
+}
+
+footer {
+  margin-bottom: 0;
+  text-align: center;
+  margin-top: 15%;
+  border: 2px solid;
+  padding: 8px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .cont-para p,
 .cont-heading h2,
 .cont-list ul li {
-  font-size: 25px;
+  font-size: 20px;
 }
 
-/* style3.css */
-
-.contact {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 10px;
-}
-.cont-para p,
-.cont-heading h2,
-.cont-list ul li {
-  font-size: 25px;
+#books > li {
+  text-align: left;
 }
 
+.contact-section {
+  display: block;
+  width: 77%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#list-section {
+  display: block;
+  padding: 37px;
+}
+
+#add-new-section {
+  display: block;
+  padding: 10px;
+}
+
+#contact-section {
+  display: block;
+  margin: -20px;
+}
