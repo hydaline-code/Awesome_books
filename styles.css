@@ -1,17 +1,137 @@
-#books {
+/* styles.css */
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: end;
+  flex-direction: row;
+  gap: 80px;
+  align-items: center;
+  margin-bottom: 15px;
+  border: 2px solid black;
+}
+.nav-links li,
+.nav-links li a {
   list-style: none;
-  text-align: left;
+  text-decoration: none;
+  font-size: 19px;
+  
+}
+.nav-links li a {
+  padding-right: 25px;
+  border-right: 2px solid black;
+  margin-right: -2px;
+}
+.nav-links li a:hover {
+color:rgb(247,185,36);
+text-decoration: underline;
+
+} 
+#current-time {
+  margin-left: 86%;
+}
+header {
+  margin-left: 10px;
+  padding: 0px 10px 0px 10px;
 }
 
-#books > li {
-  text-align: left;
+.nav-links span {
+  margin-right: 500px ;
 }
 
-.remove {
-  width: 20vw;
+.nav-links span li{
+border: 1px solid white;
+}
+form {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.titre h2{
+  display: none;
+}
+.display-4 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+#books{
+  border: 1px solid black;
+}
+
+.table th,
+.table td {
+  padding: 5px;
+}
+
+.table-bordered th,
+.table-bordered td {
+  border: 1px solid #ddd;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .add-book input[type="text"],
-#add {
-  margin-top: 0.5rem;
+.add-book button {
+  margin-bottom: 10px;
 }
+
+.line {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 20px auto;
+  width: 80%;
+}
+
+/* Additional styles for remove button */
+.remove {
+  background-color:white;
+  color: black;
+  padding: 5px 10px;
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+
+/* Custom styling for book list */
+#books {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#books tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+#books tr:nth-child(even) {
+  background-color: #fff;
+}
+
