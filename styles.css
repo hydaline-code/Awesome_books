@@ -1,15 +1,58 @@
 /* styles.css */
 
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
+.container-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#books {
+  list-style: none;
+  text-align: left;
+}
+
+#books > li {
+  text-align: left;
+}
+
+.store {
+  display: none;
+}
+
+.remove {
+  width: 20vw;
+}
+
+.add-book {
+  width: 100%;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0px;
+}
+
+input {
+  width: 25%;
+}
+
+.add-book input[type="text"],
+#add {
+  margin-top: 0.5rem;
 }
 
 .nav-links {
   display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  gap: 80px;
   align-items: center;
   margin-bottom: 15px;
+  border: 2px solid black;
 }
 
 .nav-links li,
@@ -22,53 +65,35 @@
 .nav-links li a {
   padding-right: 25px;
   border-right: 2px solid black;
-  margin-left: 12px;
-  color: black;
+  margin-right: -2px;
 }
 
-#con {
-  border-right: none;
-}
-
-.nav-links li a:active {
-  color: rgb(55, 65, 179);
-  text-decoration: none;
+.nav-links li a:hover {
+  color: rgb(247, 185, 36);
+  text-decoration: underline;
 }
 
 #current-time {
-  margin-left: auto;
-  margin-top: -2%;
-  margin-right: -180px;
-  width: 21%;
+  margin-left: 86%;
 }
 
 header {
   margin-left: 10px;
-  padding: 0 10px 0 10px;
+  padding: 0px 10px 0px 10px;
 }
 
-nav {
-  display: flex;
-  border: 2px solid;
-  justify-content: space-between;
-  padding: 0 16px;
+.nav-links span {
+  margin-right: 500px;
 }
 
-form {
-  display: none;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+.nav-links span li {
+  border: 1px solid white;
 }
 
-.titre h2 {
-  display: none;
-}
-
-.display-4 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 20px;
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .table {
@@ -104,11 +129,6 @@ form {
   text-align: center;
 }
 
-.add-book input[type="text"],
-.add-book button {
-  margin-bottom: 10px;
-}
-
 .line {
   border: none;
   border-top: 1px solid #ddd;
@@ -130,7 +150,6 @@ form {
   list-style: none;
   padding: 0;
   margin: 0;
-  border: 1px solid black;
 }
 
 #books tr:nth-child(odd) {
@@ -140,3 +159,35 @@ form {
 #books tr:nth-child(even) {
   background-color: #fff;
 }
+
+/* style2.css */
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cont-para p,
+.cont-heading h2,
+.cont-list ul li {
+  font-size: 25px;
+}
+
+/* style3.css */
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.cont-para p,
+.cont-heading h2,
+.cont-list ul li {
+  font-size: 25px;
+}
+
