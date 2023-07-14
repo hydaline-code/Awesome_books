@@ -1,3 +1,4 @@
+/* eslint-disable no-use-before-define */
 class BookStore {
   constructor() {
     this.titleInput = document.getElementById('title');
