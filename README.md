@@ -18,7 +18,6 @@
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
 # 📖 Awesome-books<a name="about-project"></a>
@@ -105,13 +104,19 @@ You can deploy this project using:
 👤 **Hydaline**
 
 - GitHub: [https://github.com/hydaline-code]
-- Twitter: [https://twitter.com/hydalineC]
 - LinkedIn: [https://www.linkedin.com/in/charlene-djoungang-0851aa21a/]
+
+- 👤 **Fatuma Hussein**
+
+- GitHub: [@fatmahussein](https://github.com/fatmahussein)
+- Twitter: [@FatmaHussein200](https://twitter.com/@FatmaHussein200)
+- LinkedIn: [FatumaHussein](https://www.linkedin.com/in/fatuma-hussein-48149917b)
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- A desktop responsive portfolio website
-- More pages added displaying my various projects
+- Using Javascript class
+- A complete styled books library
+
 
 ## 🤝 Contributing <a name="contributing"></a>
 
@@ -128,4 +133,4 @@ I give thanks to Microverse community for investing in me. I am looking forth to
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./MIT.md) licensed.
+This project is [MIT](./LICENSE) licensed.
