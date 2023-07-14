@@ -1,53 +1,80 @@
 .nav-links {
-    display: flex;
-    justify-content: end;
-    flex-direction: row;
-    gap: 80px;
-    align-items: center;
-    margin-bottom: 15px;
-    border: 2px solid black;
-  }
-  .nav-links li,
-  .nav-links li a {
-    list-style: none;
-    text-decoration: none;
-    font-size: 19px;
-    
-  }
-  .nav-links li a {
-    padding-right: 25px;
-    border-right: 2px solid black;
-    margin-right: -2px;
-  }
-  .nav-links li a:hover {
-  color:rgb(247,185,36);
-  text-decoration: underline;
-  
-  } 
-  #current-time {
-    margin-left: 86%;
-  }
-  header {
-    margin-left: 10px;
-    padding: 0px 10px 0px 10px;
-  }
-  
-  .nav-links span {
-    margin-right: 500px ;
-  }
-  
-  .nav-links span li{
-  border: 1px solid white;
-  }
-  .contact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 10px;
-  }
-  .cont-para p,
-  .cont-heading h2,
-  .cont-list ul li{
-    font-size: 25px;
-  }
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.nav-links li,
+.nav-links li a {
+  list-style: none;
+  text-decoration: none;
+  font-size: 19px;
+}
+
+.nav-links li a {
+  padding-right: 25px;
+  border-right: 2px solid black;
+  margin-left: 12px;
+  color: black;
+}
+
+#con {
+  border-right: none;
+}
+
+.nav-links li a:active {
+  color: rgb(55, 65, 179);
+  text-decoration: none;
+}
+
+#current-time {
+  margin-left: auto;
+  margin-top: 2%;
+  margin-right: -80px;
+  width: 21%;
+}
+
+header {
+  margin-left: 10px;
+  padding: 0 10px 0 10px;
+}
+
+nav {
+  display: flex;
+  border: 2px solid;
+  justify-content: space-between;
+  padding: 0 16px;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cont-heading {
+  align-items: center;
+  display: flex;
+  font-size: 23px;
+  justify-content: center;
+}
+
+.cont-para p,
+.cont-list ul li {
+  font-size: 20px;
+}
+
+table {
+  display: none;
+}
+
+form {
+  display: none;
+}
+
+.cont1 {
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -8,54 +8,63 @@
 
 .nav-links {
   display: flex;
-  justify-content: end;
-  flex-direction: row;
-  gap: 80px;
   align-items: center;
   margin-bottom: 15px;
-  border: 2px solid black;
 }
+
 .nav-links li,
 .nav-links li a {
   list-style: none;
   text-decoration: none;
   font-size: 19px;
-  
 }
+
 .nav-links li a {
   padding-right: 25px;
   border-right: 2px solid black;
-  margin-right: -2px;
+  margin-left: 12px;
+  color: black;
 }
-.nav-links li a:hover {
-color:rgb(247,185,36);
-text-decoration: underline;
 
-} 
-#current-time {
-  margin-left: 86%;
+#con {
+  border-right: none;
 }
+
+.nav-links li a:active {
+  color: rgb(55, 65, 179);
+  text-decoration: none;
+}
+
+#current-time {
+  margin-left: auto;
+  margin-top: -2%;
+  margin-right: -180px;
+  width: 21%;
+}
+
 header {
   margin-left: 10px;
-  padding: 0px 10px 0px 10px;
+  padding: 0 10px 0 10px;
 }
 
-.nav-links span {
-  margin-right: 500px ;
+nav {
+  display: flex;
+  border: 2px solid;
+  justify-content: space-between;
+  padding: 0 16px;
 }
 
-.nav-links span li{
-border: 1px solid white;
-}
 form {
   display: none;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.titre h2{
+
+.titre h2 {
   display: none;
 }
+
 .display-4 {
   font-size: 2.5rem;
   font-weight: bold;
@@ -65,9 +74,6 @@ form {
 .table {
   width: 100%;
   border-collapse: collapse;
-  border: 1px solid black;
-}
-#books{
   border: 1px solid black;
 }
 
@@ -112,7 +118,7 @@ form {
 
 /* Additional styles for remove button */
 .remove {
-  background-color:white;
+  background-color: white;
   color: black;
   padding: 5px 10px;
   cursor: pointer;
@@ -125,6 +131,7 @@ form {
   list-style: none;
   padding: 0;
   margin: 0;
+  border: 1px solid black;
 }
 
 #books tr:nth-child(odd) {
@@ -134,4 +141,3 @@ form {
 #books tr:nth-child(even) {
   background-color: #fff;
 }
-

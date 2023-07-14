@@ -1,80 +1,93 @@
 .container-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
+
 #books {
-    list-style: none;
-    text-align: left;
-  }
-  
-  #books > li {
-    text-align: left;
-  }
-  .store {
-    display: none;
-  }
-  .remove {
-    width: 20vw;
-  }
-  .add-book{
-    width: 100%;
-  }
-  form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 0px;
-  }
-  input {
-    width: 25%;
-  }
-  
-  .add-book input[type="text"],
-  #add {
-    margin-top: 0.5rem;
-  }
-  /*nav-bar*/
-  .nav-links {
-    display: flex;
-    justify-content: end;
-    flex-direction: row;
-    gap: 80px;
-    align-items: center;
-    margin-bottom: 15px;
-    border: 2px solid black;
-  }
-  .nav-links li,
-  .nav-links li a {
-    list-style: none;
-    text-decoration: none;
-    font-size: 19px;
-    
-  }
-  .nav-links li a {
-    padding-right: 25px;
-    border-right: 2px solid black;
-    margin-right: -2px;
-  }
-  .nav-links li a:hover {
-  color:rgb(247,185,36);
-  text-decoration: underline;
-  
-  } 
-  #current-time {
-    margin-left: 86%;
-  }
-  header {
-    margin-left: 10px;
-    padding: 0px 10px 0px 10px;
-  }
-  
-  .nav-links span {
-    margin-right: 500px ;
-  }
-  
-  .nav-links span li{
-  border: 1px solid white;
-  }
+  list-style: none;
+  text-align: left;
+}
+
+.store {
+  display: none;
+}
+
+.remove {
+  width: 20vw;
+}
+
+.add-book {
+  width: 100%;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+}
+
+input {
+  width: 25%;
+}
+
+.add-book input[type="text"],
+#add {
+  margin-top: 0.5rem;
+}
+
+/* nav-bar */
+.nav-links {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.nav-links li,
+.nav-links li a {
+  list-style: none;
+  text-decoration: none;
+  font-size: 19px;
+}
+
+.nav-links li a {
+  padding-right: 25px;
+  border-right: 2px solid black;
+  margin-left: 12px;
+  color: black;
+}
+
+#con {
+  border-right: none;
+}
+
+.nav-links li a:active {
+  color: rgb(55, 65, 179);
+  text-decoration: none;
+}
+
+#current-time {
+  margin-left: auto;
+  margin-top: 2%;
+  margin-right: -80px;
+  width: 21%;
+}
+
+header {
+  margin-left: 10px;
+  padding: 0 10px 0 10px;
+}
+
+nav {
+  display: flex;
+  border: 2px solid;
+  justify-content: space-between;
+  padding: 0 16px;
+}
+
+#books > li {
+  text-align: left;
+}
