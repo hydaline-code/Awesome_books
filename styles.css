@@ -1,9 +1,18 @@
 /* styles.css */
 
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
+.container-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.store {
+  display: none;
+}
+
+.add-book {
+  width: 100%;
 }
 
 form {
@@ -11,16 +20,72 @@ form {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 0;
 }
 
-.display-4 {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 20px;
+input {
+  width: 25%;
+}
+
+.add-book input[type="text"],
+#add {
+  margin-top: 0.5rem;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  gap: 80px;
+  align-items: center;
+  margin-bottom: 15px;
+  border: 2px solid black;
+}
+
+.nav-links li,
+.nav-links li a {
+  list-style: none;
+  text-decoration: none;
+  font-size: 19px;
+}
+
+.nav-links li a {
+  padding-right: 25px;
+  border-right: 2px solid black;
+  margin-right: -2px;
+}
+
+.nav-links li a:hover {
+  color: rgb(247, 185, 36);
+  text-decoration: underline;
+}
+
+.nav-links span li {
+  border: 1px solid white;
+}
+
+#current-time {
+  margin-left: 84%;
+  width: 25%;
+}
+
+header {
+  margin-left: 10px;
+  padding: 0 10px 0 10px;
+}
+
+.nav-links span {
+  margin-right: 400px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .table {
-  width: 70%;
+  width: 100%;
   border-collapse: collapse;
   border: 1px solid black;
 }
@@ -32,11 +97,11 @@ form {
 
 .table-bordered th,
 .table-bordered td {
-  border: none;
+  border: 1px solid #ddd;
 }
 
 .mt-4 {
-  margin-top: 1rem;
+  margin-top: 0;
 }
 
 .mt-5 {
@@ -52,15 +117,11 @@ form {
   text-align: center;
 }
 
-.add-book input[type="text"],
-.add-book button {
-  margin-bottom: 10px;
-}
-
 .line {
   border: none;
-  border-top: 1px solid black;
-  width: 58px;
+  border-top: 1px solid #ddd;
+  margin: 20px auto;
+  width: 80%;
 }
 
 /* Additional styles for remove button */
@@ -68,6 +129,7 @@ form {
   background-color: white;
   color: black;
   padding: 5px 10px;
+  width: 20vw;
   cursor: pointer;
   border: 1px solid black;
 }
@@ -77,11 +139,7 @@ form {
   list-style: none;
   padding: 0;
   margin: 0;
-}
-
-table tbody tr {
-  display: flex;
-  justify-content: space-between;
+  text-align: left;
 }
 
 #books tr:nth-child(odd) {
@@ -92,27 +150,54 @@ table tbody tr {
   background-color: #fff;
 }
 
-.add-book {
-  width: 50%;
+/* style2.css */
+
+.contact {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
+}
+
+footer {
+  margin-bottom: 0;
+  text-align: center;
+  margin-top: 15%;
+  border: 2px solid;
+  padding: 8px;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
 
-#title {
-  width: 50%;
+.cont-para p,
+.cont-heading h2,
+.cont-list ul li {
+  font-size: 20px;
+}
+
+#books > li {
+  text-align: left;
+}
+
+.contact-section {
+  display: block;
+  width: 77%;
   margin-left: auto;
   margin-right: auto;
 }
 
-#author {
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
+#list-section {
+  display: block;
+  padding: 37px;
 }
 
-.add-book #add {
-  margin-left: auto;
-  margin-right: 24%;
+#add-new-section {
+  display: block;
+  padding: 10px;
+}
+
+#contact-section {
+  display: block;
+  margin: -20px;
 }
